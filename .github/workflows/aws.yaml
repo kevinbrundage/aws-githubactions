@@ -32,6 +32,9 @@ jobs:
           npm i
           npm run build:prod
 
+      - name: hello
+        run: echo 'hello world'
+
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
